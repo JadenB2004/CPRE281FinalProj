@@ -21,15 +21,22 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 152 128)
+	(rect 16 16 152 160)
 	(text "push_available" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "push" (rect 0 0 18 12)(font "Arial" ))
-		(text "push" (rect 21 27 39 39)(font "Arial" ))
+		(text "Clk" (rect 0 0 12 12)(font "Arial" ))
+		(text "Clk" (rect 21 27 33 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "state" (rect 0 0 18 12)(font "Arial" ))
+		(text "state" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 136 32)
@@ -55,11 +62,25 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 136 80)
 		(output)
-		(text "E" (rect 0 0 7 12)(font "Arial" ))
-		(text "E" (rect 108 75 115 87)(font "Arial" ))
+		(text "U" (rect 0 0 7 12)(font "Arial" ))
+		(text "U" (rect 108 75 115 87)(font "Arial" ))
 		(line (pt 136 80)(pt 120 80)(line_width 1))
 	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "push" (rect 0 0 18 12)(font "Arial" ))
+		(text "push" (rect 97 91 115 103)(font "Arial" ))
+		(line (pt 136 96)(pt 120 96)(line_width 1))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "pop" (rect 0 0 14 12)(font "Arial" ))
+		(text "pop" (rect 101 107 115 119)(font "Arial" ))
+		(line (pt 136 112)(pt 120 112)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 120 96)(line_width 1))
+		(rectangle (rect 16 16 120 128)(line_width 1))
 	)
 )

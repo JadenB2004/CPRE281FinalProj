@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 144 320)
+	(rect 16 16 144 384)
 	(text "segmentpicker" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -65,6 +65,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "A1" (rect 0 0 11 12)(font "Arial" ))
 		(text "A1" (rect 21 107 32 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "E" (rect 0 0 7 12)(font "Arial" ))
+		(text "E" (rect 21 123 28 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
 		(pt 128 32)
@@ -178,7 +185,35 @@ https://fpgasoftware.intel.com/eula.
 		(text "Y15" (rect 92 267 107 279)(font "Arial" ))
 		(line (pt 128 272)(pt 112 272)(line_width 1))
 	)
+	(port
+		(pt 128 288)
+		(output)
+		(text "Clr0" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clr0" (rect 91 283 107 295)(font "Arial" ))
+		(line (pt 128 288)(pt 112 288)(line_width 1))
+	)
+	(port
+		(pt 128 304)
+		(output)
+		(text "Clr1" (rect 0 0 15 12)(font "Arial" ))
+		(text "Clr1" (rect 92 299 107 311)(font "Arial" ))
+		(line (pt 128 304)(pt 112 304)(line_width 1))
+	)
+	(port
+		(pt 128 320)
+		(output)
+		(text "Clr2" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clr2" (rect 91 315 107 327)(font "Arial" ))
+		(line (pt 128 320)(pt 112 320)(line_width 1))
+	)
+	(port
+		(pt 128 336)
+		(output)
+		(text "Clr3" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clr3" (rect 91 331 107 343)(font "Arial" ))
+		(line (pt 128 336)(pt 112 336)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 112 288)(line_width 1))
+		(rectangle (rect 16 16 112 352)(line_width 1))
 	)
 )

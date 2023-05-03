@@ -90,18 +90,20 @@ set_location_assignment PIN_W25 -to E21
 set_location_assignment PIN_J22 -to F29
 set_location_assignment PIN_U23 -to F22
 set_location_assignment PIN_H22 -to G30
-set_location_assignment PIN_U25 -to G23
-set_location_assignment PIN_AD21 -to E19
+set_location_assignment PIN_U24 -to G23
 set_location_assignment PIN_AB28 -to i0
 set_location_assignment PIN_AC28 -to i1
 set_location_assignment PIN_AC27 -to i2
 set_location_assignment PIN_AD27 -to i3
-set_location_assignment PIN_AB22 -to tempPOP
 set_location_assignment PIN_G19 -to full
 set_location_assignment PIN_M23 -to push
-set_location_assignment PIN_AB21 -to EN
 set_location_assignment PIN_J15 -to D0
 set_location_assignment PIN_G17 -to D1
 set_location_assignment PIN_J17 -to D2
 set_location_assignment PIN_H19 -to D3
+set_global_assignment -name VERILOG_FILE negEdge.v
+set_location_assignment PIN_F19 -to empty
+set_location_assignment PIN_E21 -to StateLED
+set_location_assignment PIN_AB22 -to state
+set_location_assignment PIN_Y2 -to pin_name1
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
